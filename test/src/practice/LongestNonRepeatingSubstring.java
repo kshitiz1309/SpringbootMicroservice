@@ -1,7 +1,6 @@
 package practice;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class LongestNonRepeatingSubstring {
@@ -14,7 +13,7 @@ public class LongestNonRepeatingSubstring {
         for (int end = 0; end < input.length(); end++) {//0,1,2,3,
             char currChar = input.charAt(end);
             if (visited.containsKey(currChar)) {
-                start = Math.max(visited.get(currChar)+1, start);//0,1
+                start = Math.max(visited.get(currChar)+1, start);//2 3 4 8
                // System.out.println(start);
             }
             if (output.length() < end - start + 1) {
@@ -22,7 +21,7 @@ public class LongestNonRepeatingSubstring {
                 output = input.substring(start, end + 1);//cof
             }
             //System.out.println("currChar :"+currChar+" end :"+end);
-            visited.put(currChar, end);
+            visited.put(currChar, end); //c 0,o 1, f 2, o 3,r4,g5,e6,t7,o
         }
         //visited.forEach(System.out::println);
         return output;

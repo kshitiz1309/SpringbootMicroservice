@@ -15,7 +15,5 @@ public class DuplicateIntegerInAnArray {
             }
         }
         System.out.println("Duplicate Integers : "+list);
-
-
     }
 }
