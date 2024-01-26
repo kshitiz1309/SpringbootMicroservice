@@ -1,4 +1,4 @@
-import java.io.*;
+package practice;
 import java.util.*;
 
 public class LongestLength {
