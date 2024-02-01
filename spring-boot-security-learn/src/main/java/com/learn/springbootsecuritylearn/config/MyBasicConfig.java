@@ -36,7 +36,8 @@ public class MyBasicConfig {
                 .password(this.passwordEncoder().encode("password"))
                 .roles("USER")
                 .build();
-        UserDetails admin = User.withUsername("admin")
+        UserDetails
+                admin = User.withUsername("admin")
                 .password(this.passwordEncoder().encode("pass12"))
                 .roles("ADMIN")
                 .build();

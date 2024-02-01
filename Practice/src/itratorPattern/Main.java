@@ -13,7 +13,7 @@ public class Main {
         MyIterator myIterator = userManagement.getIterator();
         while (myIterator.hasNext()){
             User user = (User)myIterator.next();
-            System.out.println(user.getName());
+            System.out.println(user.getName()+" : "+user.getUserId());
         }
 
     }
