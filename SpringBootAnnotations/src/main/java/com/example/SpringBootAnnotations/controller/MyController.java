@@ -30,4 +30,6 @@ public class MyController {
     public String username(@RequestParam(name = "userId") Integer userId){
         return String.valueOf(userId);
     }
+
+
 }
